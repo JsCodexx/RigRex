@@ -1,0 +1,17 @@
+:root {
+  --basic: #eceff1;
+  --basic-200: #e0e1e4;
+  --primary: #00a818;
+  --primary-500: #00a818;
+  --primary: #546e7a;
+  --primary-600: #546e7a;
+}
+
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
