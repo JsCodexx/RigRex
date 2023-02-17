@@ -22,13 +22,7 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
-.wrapper {
-  width: 144rem;
-  height: 94.8rem;
-  background-color: var(--basic-200);
-  margin: auto;
-  position: relative;
-}
+
 body{
   
   font-family: 'Inter', sans-serif;
