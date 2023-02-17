@@ -356,8 +356,6 @@ export default {
   font-family: Inter-Regular_;
   font-size: 4.6rem;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.39;
   letter-spacing: normal;
   size: 4.6rem;
