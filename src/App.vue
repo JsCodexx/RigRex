@@ -1,16 +1,19 @@
 <template>
+  <ceiling-card></ceiling-card>
   <intro-card></intro-card>
-  <para-card></para-card>
+  <privacy-card></privacy-card>
 </template>
 
 <script>
 import IntroCard from "@/components/IntroCard";
-import ParaCard from "@/components/ParaCard.vue";
+import PrivacyCard from "@/components/PrivacyCard.vue";
+import CeilingCard from "./components/CeilingCard.vue";
 export default {
   name: "App",
   components: {
     IntroCard,
-    ParaCard,
+    PrivacyCard,
+    CeilingCard,
   },
 };
 </script>

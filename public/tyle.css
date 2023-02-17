@@ -1,10 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800&family=Montserrat:wght@500&display=swap');
+
 :root {
   --basic: #eceff1;
   --basic-200: #e0e1e4;
+  --basic: #ffffff;
+  --basic-100: #ffffff;
   --primary: #00a818;
   --primary-500: #00a818;
   --primary: #546e7a;
   --primary-600: #546e7a;
+  --primary: #37474f;
+  --primary-900: #37474f;
 }
 
 html {
@@ -14,4 +21,15 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.wrapper {
+  width: 144rem;
+  height: 94.8rem;
+  background-color: var(--basic-200);
+  margin: auto;
+  position: relative;
+}
+body{
+  
+  font-family: 'Inter', sans-serif;
 }

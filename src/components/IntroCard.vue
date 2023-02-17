@@ -1,11 +1,11 @@
 <template>
-  <div class="parent">
-    <div class="child1">
+  <div class="wrapper">
+    <div class="thumbnail_card">
       <div class="image-child">
         <img src="../assets/pic.png" alt="" />
       </div>
     </div>
-    <div class="child2">
+    <div class="description_card">
       <div class="para">
         <h2>Garantie für Spanndecken</h2>
         <p>
@@ -41,7 +41,8 @@ export default {
 };
 </script>
   <style scoped>
-.parent {
+/* Wrapper design */
+.wrapper {
   position: relative;
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -51,17 +52,16 @@ export default {
   display: flex;
   justify-content: flex-end;
 }
-.child1 {
+/* Picture container */
+.thumbnail_card {
   position: absolute;
-  /* border: 2px solid #999;
-    height: 250px; */
   top: -4.9rem;
   left: -0.2rem;
   width: 50%;
   bottom: 5.4rem;
 }
-.child2 {
-  /* position: absolute; */
+/* Description container */
+.description_card {
   width: 50%;
   justify-content: flex-end;
 }
@@ -92,10 +92,7 @@ export default {
 
   width: 55.5rem;
   height: 4.8rem;
-  /* margin-top: 2.9rem; */
   margin-bottom: 3.7rem;
-  /* margin-right: 15rem; */
-  font-family: Inter-Regular_;
   font-size: 3.6rem;
   font-weight: bold;
   font-stretch: normal;
@@ -105,7 +102,6 @@ export default {
 }
 p {
   color: var(--primary-600);
-  font-family: Inter-Regular_;
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
