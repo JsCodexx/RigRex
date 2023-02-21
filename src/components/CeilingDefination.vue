@@ -26,9 +26,7 @@ export default {
   data() {
     return {};
   },
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 
@@ -40,6 +38,7 @@ export default {
   flex-direction: row;
   gap: 12.7rem;
   background-color: var(--basic-100);
+  padding-bottom: 8.4rem;
 }
 
 .description {

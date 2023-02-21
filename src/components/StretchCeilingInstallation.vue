@@ -49,6 +49,8 @@ export default {
   padding: auto;
   background-color: var(--basic-100);
   padding-top: 15.6rem;
+  padding-bottom: 15.4rem;
+
 }
 .main_heading {
   margin-left: 15rem;

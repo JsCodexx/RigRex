@@ -62,6 +62,8 @@ export default {
   gap: 12.7rem;
   /* flex-wrap: wrap; */
   background-color: var(--basic-200);
+  padding-bottom: 12.6rem;
+
 }
 .thumbnail {
   margin-top: 10.6rem;

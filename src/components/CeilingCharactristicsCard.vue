@@ -58,6 +58,8 @@ export default {
   padding: auto;
   padding: 15.4rem 15rem 1.7rem;
   gap: 2rem;
+  padding-bottom: 5.1rem;
+
 }
 
 .main_heading {
