@@ -39,6 +39,8 @@ export default {
   gap: 12.7rem;
   background-color: var(--basic-100);
   padding-bottom: 8.4rem;
+  width: 138.4rem;
+
 }
 
 .description {

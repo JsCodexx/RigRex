@@ -50,6 +50,8 @@ export default {
   background-color: var(--basic-100);
   padding-top: 15.6rem;
   padding-bottom: 15.4rem;
+  width: 138.4rem;
+
 
 }
 .main_heading {

@@ -34,11 +34,13 @@ export default {
 </script>
 
 <style scoped>.wrapper {
-    width: 144rem;
+     width: 138.4rem;
+
     height: 82.6rem;
     background-color: var(--basic-100);
     display: flex;
     flex-wrap: wrap;
+
   }
   
   .heading_container {

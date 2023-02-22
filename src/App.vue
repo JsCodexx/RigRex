@@ -1,11 +1,12 @@
 <template>
-  <ceiling-defination></ceiling-defination>
+  <question-answers></question-answers>
+  <!-- <ceiling-defination></ceiling-defination>
   <ceiling-uses></ceiling-uses>
   <stretch-ceiling-installation></stretch-ceiling-installation>
   <types-of-ceiling></types-of-ceiling>
   <ceiling-charactristics-card-vue></ceiling-charactristics-card-vue>
   <ceiling-installation-card></ceiling-installation-card>
-  <appointment-card></appointment-card>
+  <appointment-card></appointment-card> -->
   <!-- <carousel-card></carousel-card> -->
   <!-- <ceiling-card></ceiling-card>
   <intro-card></intro-card>
@@ -15,13 +16,14 @@
 </template>
 
 <script>
-import CeilingDefination from "./components/CeilingDefination.vue";
-import CeilingUses from "./components/CeilingUses.vue";
-import StretchCeilingInstallation from './components/StretchCeilingInstallation.vue';
-import TypesOfCeiling from "./components/TypesOfCeiling.vue";
-import AppointmentCard from "./components/AppointmentCard.vue";
-import CeilingCharactristicsCardVue from "./components/CeilingCharactristicsCard.vue";
-import CeilingInstallationCard from "./components/CeilingInstallationCard.vue";
+import QuestionAnswers from './components/QuestionAnswers.vue';
+// import CeilingDefination from "./components/CeilingDefination.vue";
+// import CeilingUses from "./components/CeilingUses.vue";
+// import StretchCeilingInstallation from './components/StretchCeilingInstallation.vue';
+// import TypesOfCeiling from "./components/TypesOfCeiling.vue";
+// import AppointmentCard from "./components/AppointmentCard.vue";
+// import CeilingCharactristicsCardVue from "./components/CeilingCharactristicsCard.vue";
+// import CeilingInstallationCard from "./components/CeilingInstallationCard.vue";
 // import SocialStreamSlceVue from './components/SocialStreamSlce.vue';
 // import CarouselCard from "@/components/CarouselCard"
 // import IntroCard from "@/components/IntroCard";
@@ -37,13 +39,14 @@ export default {
     // CeilingVideo ,
     // CarouselCard,
     // SocialStreamSlceVue
-    CeilingInstallationCard,
-    CeilingCharactristicsCardVue,
-    CeilingDefination,
-    CeilingUses,
-    AppointmentCard,
-    StretchCeilingInstallation,
-    TypesOfCeiling,
+    // CeilingInstallationCard,
+    // CeilingCharactristicsCardVue,
+    // CeilingDefination,
+    // CeilingUses,
+    // AppointmentCard,
+    // StretchCeilingInstallation,
+    // TypesOfCeiling,
+    QuestionAnswers
   },
 };
 </script>

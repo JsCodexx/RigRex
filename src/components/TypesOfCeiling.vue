@@ -66,16 +66,21 @@ export default {
   margin: auto;
   padding: auto;
   display: flex;
+  width: 138.4rem;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 20.6rem;
   background-color: var(--basic-200);
   flex-direction: column;
+  width: 138.4rem;
 }
 
 /* main container */
 .content_container {
   margin-top: 13.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* paragraph setting */
@@ -92,13 +97,11 @@ export default {
 .heading_content {
   width: 50.4rem;
   height: 8.0rem;
-  margin-left: 58.8rem;
   font-size: 3.2rem;
   font-weight: bold;
   line-height: 1.25;
   letter-spacing: normal;
   text-align: center;
-  justify-content: center;
   color: var(--primary-500);
 }
 
@@ -199,6 +202,7 @@ export default {
   color: var(--primary-500);
   text-align: center;
   font-weight: bold;
+  cursor: pointer;
 }
 
 </style>

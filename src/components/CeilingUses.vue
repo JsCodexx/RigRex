@@ -57,12 +57,15 @@ export default {
 <style scoped>
 .wrapper {
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding:auto;
   gap: 12.7rem;
   /* flex-wrap: wrap; */
+  flex-direction: row;
   background-color: var(--basic-200);
   padding-bottom: 12.6rem;
+  width: 138.4rem;
+
 
 }
 .thumbnail {
