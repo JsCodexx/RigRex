@@ -2,6 +2,7 @@
   <ceiling-defination></ceiling-defination>
   <ceiling-uses></ceiling-uses>
   <stretch-ceiling-installation></stretch-ceiling-installation>
+  <types-of-ceiling></types-of-ceiling>
   <ceiling-charactristics-card-vue></ceiling-charactristics-card-vue>
   <ceiling-installation-card></ceiling-installation-card>
   <appointment-card></appointment-card>
@@ -17,7 +18,7 @@
 import CeilingDefination from "./components/CeilingDefination.vue";
 import CeilingUses from "./components/CeilingUses.vue";
 import StretchCeilingInstallation from './components/StretchCeilingInstallation.vue';
-
+import TypesOfCeiling from "./components/TypesOfCeiling.vue";
 import AppointmentCard from "./components/AppointmentCard.vue";
 import CeilingCharactristicsCardVue from "./components/CeilingCharactristicsCard.vue";
 import CeilingInstallationCard from "./components/CeilingInstallationCard.vue";
@@ -41,7 +42,8 @@ export default {
     CeilingDefination,
     CeilingUses,
     AppointmentCard,
-    StretchCeilingInstallation
+    StretchCeilingInstallation,
+    TypesOfCeiling,
   },
 };
 </script>
