@@ -5,12 +5,7 @@
     </div>
     <div v-for="(question, index) in questions" :key="index">
       <div class="container">
-        <div
-          v-show="item === index"
-          v-on:click="hideDiv(index)"
-          v-bind:style="{ display: showDiv ? 'block' : 'none' }"
-          class="questionContainer"
-        >
+        <div class="questionContainer">
           <h6>{{ question.query }}</h6>
           <div class="arrow_div">
             <button @click="showDescription(index)">
