@@ -1,32 +1,34 @@
 <template>
   <div class="wrapper">
-    <div class="heading">
-      <h1>Häufig gestellte Fragen</h1>
-    </div>
-    <div v-for="(question, index) in questions" :key="index">
-      <div class="container">
-        <div class="questionContainer">
-          <h6>{{ question.query }}</h6>
-          <div class="arrow_div">
-            <button @click="showDescription(index)">
-              <i class="arrow down"></i>
-            </button>
-          </div>
-        </div>
+    <div class="main_container">
+      <div class="heading">
+        <h1>Häufig gestellte Fragen</h1>
       </div>
-      <transition name="fade">
-        <div class="answer" v-show="selectedItemIndex === index">
-          <div class="cross_div">
-            <button @click="showDescription(index)">
-              <i class="close down">X</i>
-            </button>
+      <div v-for="(question, index) in questions" :key="index">
+        <div class="container">
+          <div class="questionContainer">
+            <h6>{{ question.query }}</h6>
+            <div class="arrow_div">
+              <button @click="showDescription(index)">
+                <i class="arrow down"></i>
+              </button>
+            </div>
           </div>
-          <h6>{{ question.query }}</h6>
-          <p>
-            {{ question.answer }}
-          </p>
         </div>
-      </transition>
+        <transition name="fade">
+          <div class="answer" v-show="selectedItemIndex === index">
+            <div class="cross_div">
+              <button @click="showDescription(index)">
+                <i class="close down">x</i>
+              </button>
+            </div>
+            <h6>{{ question.query }}</h6>
+            <p>
+              {{ question.answer }}
+            </p>
+          </div>
+        </transition>
+      </div>
     </div>
   </div>
 </template>
@@ -41,6 +43,31 @@ export default {
       item: 1,
 
       questions: [
+        {
+          query: "Wie werden Spanndecken montiert?",
+          answer:
+            "Spanndecken lassen sich in allen Räumen in beliebigen Formen montieren – egal, ob es sich um Büros, Schwimmbäder, Sporthallen, Wohnungen, Clubs, Konzerthallen, Läden, Supermärkte, Restaurants oder Salons handelt. Auch Dachschrägen, unebenen Decken, Rundungen, Beleuchtungskörper, Belüftungsanlagen oder komplexe Grundrisse stellen kein Problem dar.",
+        },
+        {
+          query: "Wie werden Spanndecken montiert?",
+          answer:
+            "Spanndecken lassen sich in allen Räumen in beliebigen Formen montieren – egal, ob es sich um Büros, Schwimmbäder, Sporthallen, Wohnungen, Clubs, Konzerthallen, Läden, Supermärkte, Restaurants oder Salons handelt. Auch Dachschrägen, unebenen Decken, Rundungen, Beleuchtungskörper, Belüftungsanlagen oder komplexe Grundrisse stellen kein Problem dar.",
+        },
+        {
+          query: "Wie werden Spanndecken montiert?",
+          answer:
+            "Spanndecken lassen sich in allen Räumen in beliebigen Formen montieren – egal, ob es sich um Büros, Schwimmbäder, Sporthallen, Wohnungen, Clubs, Konzerthallen, Läden, Supermärkte, Restaurants oder Salons handelt. Auch Dachschrägen, unebenen Decken, Rundungen, Beleuchtungskörper, Belüftungsanlagen oder komplexe Grundrisse stellen kein Problem dar.",
+        },
+        {
+          query: "Wie werden Spanndecken montiert?",
+          answer:
+            "Spanndecken lassen sich in allen Räumen in beliebigen Formen montieren – egal, ob es sich um Büros, Schwimmbäder, Sporthallen, Wohnungen, Clubs, Konzerthallen, Läden, Supermärkte, Restaurants oder Salons handelt. Auch Dachschrägen, unebenen Decken, Rundungen, Beleuchtungskörper, Belüftungsanlagen oder komplexe Grundrisse stellen kein Problem dar.",
+        },
+        {
+          query: "Wie werden Spanndecken montiert?",
+          answer:
+            "Spanndecken lassen sich in allen Räumen in beliebigen Formen montieren – egal, ob es sich um Büros, Schwimmbäder, Sporthallen, Wohnungen, Clubs, Konzerthallen, Läden, Supermärkte, Restaurants oder Salons handelt. Auch Dachschrägen, unebenen Decken, Rundungen, Beleuchtungskörper, Belüftungsanlagen oder komplexe Grundrisse stellen kein Problem dar.",
+        },
         {
           query: "Wie werden Spanndecken montiert?",
           answer:
@@ -80,18 +107,19 @@ export default {
   background-color: var(--basic-100);
   display: flex;
   flex-direction: column;
-  margin: auto;
-  padding: auto;
-  padding-top: 12.5rem;
+  margin: 0 auto;
+  padding: 0 auto;
+  align-items: center;
+  padding-bottom: 12.6rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
+/* main heading setting */
+
 .heading {
+  margin-top: 12.5rem;
   width: 36.9rem;
   height: 11.2rem;
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: start;
+  text-align: start;
 }
 .heading h1 {
   font-size: 4.6rem;
@@ -99,14 +127,17 @@ export default {
   line-height: 1.22;
   letter-spacing: normal;
   color: var(--primary-900);
+  width: 36.9rem;
+  height: 11.2rem;
 }
 
+/* question container */
 .container {
   width: 75rem;
   height: 5.4rem;
-  margin: 30px 277.3px 30px 0;
+  margin: 3.0rem 0;
   padding: 1.5rem 2.3rem 1.5rem 2.4rem;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .2rem .6rem 0 rgba(0, 0, 0, 0.1);
   background-color: var(--basic-100);
   justify-content: center;
   align-items: center;
@@ -128,19 +159,14 @@ export default {
   right: 3%;
 }
 .cross_div i {
-  border: 0.4rem solid green;
+  border:  solid green;
   border-radius: 50%;
   padding: 0;
-  color: green;
-  font-weight: bold;
+  margin: 0;
+  color: green;  
 }
-.close {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  padding: 12px 16px;
-  transform: translate(0%, -50%);
+.cross_div button{
+  border: none;
 }
 
 /* ARROW BUTTON */
@@ -159,9 +185,13 @@ export default {
 }
 .arrow {
   border: solid rgb(132, 131, 131);
-  border-width: 0 3px 3px 0;
+  border-width: 0 .3rem .3rem 0;
   display: inline-block;
-  padding: 3px;
+  padding: .3rem;
+  width: 1rem;
+  height: 1rem;
+  /* margin: 0 0 0 35.8px; */
+  object-fit: contain;
 }
 .down {
   transform: rotate(45deg);
@@ -172,7 +202,7 @@ export default {
 .answer {
   width: 75rem;
   height: auto;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 .2rem .6rem 0 rgba(0, 0, 0, 0.1);
   background-color: var(--basic-200);
   margin-top: 2rem;
   padding-bottom: 3.91rem;
@@ -189,10 +219,14 @@ export default {
   padding-bottom: 1.5rem;
 }
 .answer p {
+  width: 55.6rem;
+  height: 12.0rem;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.6;
   letter-spacing: normal;
+  padding-left: 9.7rem;
+  margin-bottom: 3.91rem;
   color: var(--primary-900);
 }
 
