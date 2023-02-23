@@ -102,7 +102,7 @@ export default {
 
 <style scoped>
 .wrapper {
-  width: 138.4rem;
+  max-width: 138.4rem;
   height: auto;
   background-color: var(--basic-100);
   display: flex;
@@ -117,7 +117,6 @@ export default {
 
 .heading {
   margin-top: 12.5rem;
-  width: 36.9rem;
   height: 11.2rem;
   text-align: start;
 }
@@ -127,7 +126,6 @@ export default {
   line-height: 1.22;
   letter-spacing: normal;
   color: var(--primary-900);
-  width: 36.9rem;
   height: 11.2rem;
 }
 
@@ -135,9 +133,9 @@ export default {
 .container {
   width: 75rem;
   height: 5.4rem;
-  margin: 3.0rem 0;
+  margin: 3rem 0;
   padding: 1.5rem 2.3rem 1.5rem 2.4rem;
-  box-shadow: 0 .2rem .6rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.1);
   background-color: var(--basic-100);
   justify-content: center;
   align-items: center;
@@ -159,13 +157,13 @@ export default {
   right: 3%;
 }
 .cross_div i {
-  border:  solid green;
+  border: solid green;
   border-radius: 50%;
   padding: 0;
   margin: 0;
-  color: green;  
+  color: green;
 }
-.cross_div button{
+.cross_div button {
   border: none;
 }
 
@@ -185,9 +183,9 @@ export default {
 }
 .arrow {
   border: solid rgb(132, 131, 131);
-  border-width: 0 .3rem .3rem 0;
+  border-width: 0 0.3rem 0.3rem 0;
   display: inline-block;
-  padding: .3rem;
+  padding: 0.3rem;
   width: 1rem;
   height: 1rem;
   /* margin: 0 0 0 35.8px; */
@@ -202,7 +200,7 @@ export default {
 .answer {
   width: 75rem;
   height: auto;
-  box-shadow: 0 .2rem .6rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.6rem 0 rgba(0, 0, 0, 0.1);
   background-color: var(--basic-200);
   margin-top: 2rem;
   padding-bottom: 3.91rem;
@@ -220,7 +218,7 @@ export default {
 }
 .answer p {
   width: 55.6rem;
-  height: 12.0rem;
+  height: 12rem;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.6;

@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style scoped>.wrapper {
-     width: 138.4rem;
+     max-width: 138.4rem;
 
     height: 82.6rem;
     background-color: var(--basic-100);

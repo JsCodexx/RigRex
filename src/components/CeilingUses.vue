@@ -64,7 +64,7 @@ export default {
   flex-direction: row;
   background-color: var(--basic-200);
   padding-bottom: 12.6rem;
-  width: 138.4rem;
+  max-width: 138.4rem;
 
 
 }
@@ -110,14 +110,19 @@ export default {
   .wrapper {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem;
   }
   .description {
-    padding: 0 3rem;
-    padding-top: 0;
+    /* padding: 0 1rem; */
+    width: 85%;
+    margin-top:2rem;
+    padding-right: 0;
   }
   .thumbnail img {
     width: auto;
     height: auto;
+    margin: 0;
+    padding: 0;
   }
 }
 </style>

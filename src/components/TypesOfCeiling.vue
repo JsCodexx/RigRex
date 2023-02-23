@@ -66,13 +66,12 @@ export default {
   margin: auto;
   padding: auto;
   display: flex;
-  width: 138.4rem;
+  max-width: 138.4rem;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 20.6rem;
   background-color: var(--basic-200);
   flex-direction: column;
-  width: 138.4rem;
 }
 
 /* main container */

@@ -32,6 +32,7 @@ export default {
 .wrapper {
   margin: 0;
   padding: 0;
+  max-width: 138.4rem;
   background-color: var(--basic-100);
 }
 

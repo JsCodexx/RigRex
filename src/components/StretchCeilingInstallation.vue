@@ -31,15 +31,11 @@
 
 <script>
 export default {
-    name:'StretchCeilingInstallation',
-    data() {
-        return {
-            
-        }
-    },
-    methods: {
-        
-    },
+  name: "StretchCeilingInstallation",
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
@@ -50,9 +46,7 @@ export default {
   background-color: var(--basic-100);
   padding-top: 15.6rem;
   padding-bottom: 15.4rem;
-  width: 138.4rem;
-
-
+  max-width: 138.4rem;
 }
 .main_heading {
   margin-left: 15rem;
@@ -66,11 +60,14 @@ export default {
 }
 .container {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .description {
   margin-left: 15rem;
-  margin-right: 12.5rem;
-  width: 50%;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
 }
 .description p {
   font-size: 1.5rem;
@@ -84,7 +81,7 @@ export default {
 .methods {
   margin-right: 15rem;
   margin-top: 5.7rem;
-  width: 50%;
+  width: 40%;
 }
 .methods p {
   font-size: 1.5rem;
@@ -96,8 +93,10 @@ export default {
 }
 
 .methods ul {
-  margin-left: 14rem;
-  margin-top: 0.4rem;
+  margin-left: 15rem;
+  justify-content: center;
+  padding-top: 0.4rem;
+ 
 }
 
 .methods ul li {
@@ -108,20 +107,30 @@ export default {
 }
 
 /* media Query at 1000px */
-@media only screen and (max-width: 100em) {
+@media only screen and (max-width: 60em) {
   .container {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description{
+    margin: 0;
+    padding: 0;
+    width: 90%;
   }
   .methods {
     margin-top: 2em;
     padding: 0;
     margin-right: 0;
+    width: 90%;
+
+
   }
   .methods p {
     margin: 0;
-    padding-left: 10em;
+    /* padding-left: 10em; */
   }
   .methods li {
     margin-top: 1em;

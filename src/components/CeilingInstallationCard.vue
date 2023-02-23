@@ -55,7 +55,7 @@ export default {
   padding: 15.4rem 15rem 1.7rem;
   gap: 2rem;
   padding-bottom: 1.7rem;
-  width: 138.4rem;
+  max-width: 138.4rem;
 
 
 }
